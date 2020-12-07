@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+	<title>Moguchka</title>
+	<link rel="icon" href="./img/icon.png">
+	<link rel="stylesheet" href="style.css">
+	<style>
+		.test {letter-spacing: 3px;}
+		h3 {letter-spacing: 3px;}
+		.wrapper {font-style: italic;}
+	</style>
+	<script src="script.js"></script>
+</head>
+
+
+<body>
+	
+	<header class="hat">
+		<!-- LOGO !-->
+		<nav class="logo">
+			<a href="./index.html"><img class="logoimg" src="./img/logo.png"></a>
+		</nav>
+		<!-- TOP MENU !-->
+		<nav class="menubar">
+			<ul>
+				<li><a href="index.html"><b>ГЛАВНАЯ</b></a></li>
+				<li><a href="info.html"><b>ИНФОРМАЦИЯ</b></a></li>
+				<li><a href=""><b>БИОГРАФИИ</b></a>
+					<ul>
+						<li><a href="borodin.html">А.П.БОРОДИН</a></li>
+						<li><a href="musorgsky.html">М.П.МУСОРГСКИЙ</a></li>
+						<li><a href="rimkor.html">Н.А.РИМСКИЙ-КОРСАКОВ</a></li>
+						<li><a href="kuoyu.html">Ц.А.КЮИ</a></li>
+						<li><a href="balakirev.html">М.А.БАЛАКИРЕВ</a></li>
+					</ul>
+				</li>
+				<li><a href=""><b>ТВОРЧЕСТВО</b></a>
+					<ul>
+						<li><a href="opera.html">ОПЕРЫ</a></li>
+						<li><a href="choir.html">ДЛЯ ХОРА</a></li>
+						<li><a href="orcestr.html">ДЛЯ ОРКЕСТРА</a></li>
+						<li><a href="balet.html">БАЛЕТЫ</a></li>
+					</ul>
+					</li>			
+				<li><a href="gallery.html"><b>ГАЛЕРЕЯ</b></a></li>
+				<li><a href="test.html"><b>ТЕСТ</b></a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	
+	<!-- CONTAINER !-->
+	<nav class="wrapper">
+		<form name="quiz" action="javascript:check();" class="quizform">
+			<h3>&#127926; Опросник по теме</h3><br/><hr/><br/>
+			<div class="test">
+				<p style="margin-bottom:15px;"><b>Могучая кучка это..</b></p>
+				<div><input name="q1" value="n" id="v1" type="radio"/> Музыкальное произведение</div>
+				<div><input name="q1" value="y" id="v2" type="radio"/> Содружество композиторов</div>
+				<div><input name="q1" value="n" id="v3" type="radio"/> Литературный кружок</div>
+				<div><input name="q1" value="n" id="v4" type="radio"/> Объединение художников</div>
+				<div><input name="q1" value="n" id="v5" type="radio"/> Направление в музыке</div>
+				<div><input name="q1" value="n" id="v6" type="radio"/> Учебное заведение</div>
+			</div><br/><hr/><br/>
+			
+			<div class="test">
+				<p style="margin-bottom:15px;"><b>Альтернативное название "Могучей кучки"</b></p>
+				<div><input name="q2" value="n" id="v1" type="radio"/> Неистовая пятерка </div>
+				<div><input name="q2" value="n" id="v2" type="radio"/> Бородинский кружок</div>
+				<div><input name="q2" value="y" id="v3" type="radio"/> Группа пяти</div>
+				<div><input name="q2" value="n" id="v4" type="radio"/> Старая русская музыкальная школа</div>
+				<div><input name="q2" value="n" id="v5" type="radio"/> Пятерочка</div>
+				<div><input name="q2" value="n" id="v6" type="radio"/> Ничего из этого</div>
+			</div><br/><hr/><br/>
+			
+			<div class="test">
+				<p style="margin-bottom:15px;"><b>Руководителем содружества был..</b></p>
+				<div><input name="q3" value="n" id="v1" type="radio"/> М. И. Глинка </div>
+				<div><input name="q3" value="n" id="v2" type="radio"/> Н. А. Римский-Корсаков</div>
+				<div><input name="q3" value="n" id="v3" type="radio"/> А. П. Бородин</div>
+				<div><input name="q3" value="n" id="v4" type="radio"/> В. В. Стасов</div>
+				<div><input name="q3" value="y" id="v5" type="radio"/> М. А. Балакирев</div>
+				<div><input name="q3" value="n" id="v6" type="radio"/> Ц. А. Кюи</div>
+			</div><br/><hr/><br/>
+			
+			<div class="test">
+				<p style="margin-bottom:15px;"><b>Основоположник русской национальной оперы</b></p>
+				<div><input name="q4" value="y" id="v1" type="radio"/> М. И. Глинка</div>
+				<div><input name="q4" value="n" id="v2" type="radio"/> А. С. Даргомыжский</div>
+				<div><input name="q4" value="n" id="v3" type="radio"/> М. А. Балакирев</div>
+				<div><input name="q4" value="n" id="v4" type="radio"/> П. И. Чайковский</div>
+				<div><input name="q4" value="n" id="v5" type="radio"/> М. П. Мусоргский</div>
+				<div><input name="q4" value="n" id="v6" type="radio"/> В. В. Стасов </div>
+			</div><br/><hr/><br/>
+			
+			<div class="test">
+				<p style="margin-bottom:15px;"><b>В каком году была написана опера "Жизнь за царя"?</b></p>
+				<div><input name="q5" value="n" id="v1" type="radio"/> 1846 г.</div>
+				<div><input name="q5" value="n" id="v2" type="radio"/> 1844 г.</div>
+				<div><input name="q5" value="n" id="v3" type="radio"/> 1842 г.</div>
+				<div><input name="q5" value="n" id="v4" type="radio"/> 1840 г.</div>
+				<div><input name="q5" value="n" id="v5" type="radio"/> 1838 г.</div>
+				<div><input name="q5" value="y" id="v6" type="radio"/> 1836 г.</div>
+			</div><br/><hr/><br/>			
+			
+			<div class="test">
+				<p style="margin-bottom:15px;"><b>Как называется высшее музыкальное учебное заведение?</b></p>
+				<div><input name="q6" value="n" id="v1" type="radio"/> Обсерватория </div>
+				<div><input name="q6" value="y" id="v2" type="radio"/> Консерватория</div>
+				<div><input name="q6" value="n" id="v3" type="radio"/> Кунсткамера</div>
+				<div><input name="q6" value="n" id="v4" type="radio"/> МузВУЗ</div>
+				<div><input name="q6" value="n" id="v5" type="radio"/> Музыкальная школа</div>
+				<div><input name="q6" value="n" id="v6" type="radio"/> Министерство культуры</div>
+			</div><br/><hr/><br/>
+			
+			<div class="test">
+				<p style="margin-bottom:15px;"><b>Кто из кучкиство не работал в жанре "опера"?</b></p>
+				<div><input name="q7" value="n" id="v1" type="radio"/> Н. А. Римский-Корсаков </div>
+				<div><input name="q7" value="n" id="v2" type="radio"/> Ц. А. Кюи</div>
+				<div><input name="q7" value="n" id="v3" type="radio"/> А. П. Бородин</div>
+				<div><input name="q7" value="y" id="v4" type="radio"/> М. А. Балакирев</div>
+				<div><input name="q7" value="n" id="v5" type="radio"/> М. П. Мусоргский</div>
+				<div><input name="q7" value="n" id="v6" type="radio"/> Никто </div>
+			</div><br/><hr/><br/>
+			
+			<div class="test">
+				<p style="margin-bottom:15px;"><b>Кто был главным идеологом "Могучей кучки"?</b></p>
+				<div><input name="q8" value="y" id="v1" type="radio"/> В. В. Стасов </div>
+				<div><input name="q8" value="n" id="v2" type="radio"/> А. Н. Серов</div>
+				<div><input name="q8" value="n" id="v3" type="radio"/> В. Г. Белинский</div>
+				<div><input name="q8" value="n" id="v4" type="radio"/> М. П. Беляев</div>
+				<div><input name="q8" value="n" id="v5" type="radio"/> М. И. Глинка</div>
+				<div><input name="q8" value="n" id="v6" type="radio"/> М. А. Балакирев </div>
+			</div><br/><hr/><br/>
+			
+			<div class="test">
+				<p style="margin-bottom:15px;"><b> Сколько опер у Н. А. Римского-Корсакова?</b></p>
+				<div><input name="q9" value="n" id="v1" type="radio"/> 1 &#8212 5</div>
+				<div><input name="q9" value="n" id="v2" type="radio"/> 6 &#8212 10</div>
+				<div><input name="q9" value="n" id="v3" type="radio"/> 11 &#8212 15</div>
+				<div><input name="q9" value="n" id="v4" type="radio"/> 16 &#8212 20</div>
+				<div><input name="q9" value="n" id="v5" type="radio"/> 21 &#8212 25</div>
+				<div><input name="q9" value="n" id="v6" type="radio"/> 25 &#8212 30</div>
+				<div><input name="q9" value="y" id="v6" type="radio"/> Более 30-ти</div>
+			</div><br/><hr/><br/>
+
+			<div class="test">
+				<p style="margin-bottom:15px;"><b>Кто является автором произведения "Картинки с выставки"?</b></p>
+				<div><input name="q10" value="n" id="v1" type="radio"/> М. И. Глинка</div>
+				<div><input name="q10" value="n" id="v2" type="radio"/> П. И. Чайковский</div>
+				<div><input name="q10" value="n" id="v3" type="radio"/> М. А. Балакирев</div>
+				<div><input name="q10" value="n" id="v4" type="radio"/> А. П. Бородин</div>
+				<div><input name="q10" value="y" id="v5" type="radio"/> М. П. Мусоргский</div>
+				<div><input name="q10" value="n" id="v6" type="radio"/> Н. А. Римский-Корсаков</div>
+			</div><br/><hr/><br/>						
+			<button id="btn_modal_window" style='width:200px; height:50px;'>ПРОВЕРИТЬ</button>
+			
+			<div id="my_modal" class="modal">
+				<div class="modal_content">
+					<span class="close_modal_window">×</span>
+					<p class="score">Правильных ответов : </p>
+				</div>
+			</div>	
+			<script>
+				var modal = document.getElementById("my_modal");
+				var btn = document.getElementById("btn_modal_window");
+				var span = document.getElementsByClassName("close_modal_window")[0];
+				
+				btn.onclick = function (e) { modal.style.display = "block"; }
+				span.onclick = function (e) { modal.style.display = "none"; }
+				window.onclick = function (e) {
+					if (e.target == modal) { modal.style.display = "none"; }
+				}				
+			</script>		
+			<input style='width:200px; height:50px;' value="СБРОСИТЬ" type="reset" id="button"/>	
+		</form><br/>
+	</nav>
+	
+	
+	<footer>
+		<img class="spbgutlogo"src="./img/spbgut.png">
+		<nav class="foottext">
+			<p><b>Разработчик</b>: студент группы ИСТ-951 Бондарчук А.В.</p>
+			<p><b>Эл. почта</b>: bondarchuckaleksey@yandex.ru</p>
+			<p style="margin-top: 15px;">Copyright 2020 <b>&copy;</b> moguchka.ru  </p>
+		</nav>
+	</footer>
+</body>
+
+
+</html>
